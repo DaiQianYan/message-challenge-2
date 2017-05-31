@@ -14,9 +14,7 @@ What we'd like is a simple messaging dashboard where users can talk with other u
 
 We've provided a sample view page and some sample users to save you some time. 
 
-If you haven't already, [install Ruby and PostgreSQL](https://gorails.com/setup/osx/10.12-sierra), `cd` into the directory, and run the following commands.
-
-Let's get this running:
+If you haven't already, [install Ruby and PostgreSQL](https://gorails.com/setup/osx/10.12-sierra), once that's setup, it's time to get this running:
 ```bash
 $ git clone git@cd.i.strikingly.com:strikingly/message-challenge.git  # clone the repository
 $ cd message-challenge  # go into it
