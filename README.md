@@ -18,17 +18,11 @@ If you haven't already, [install Ruby and PostgreSQL](https://gorails.com/setup/
 
 First install your dependency gems:
 ```
-bundle install
-```
-
-Then setup up your database:
-```
-rake db:setup
-```
-
-Then start the server:
-```
-rails s
+git clone git@cd.i.strikingly.com:strikingly/message-challenge.git # first we clone the repository
+cd message-challenge # go into it
+bundle install # install the gems
+rake db:setup # setup the database
+rails s # start the server
 ```
 
 And visit http://localhost:3000/ in your browser.
