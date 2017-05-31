@@ -16,13 +16,14 @@ We've provided a sample view page and some sample users to save you some time.
 
 If you haven't already, [install Ruby and PostgreSQL](https://gorails.com/setup/osx/10.12-sierra), `cd` into the directory, and run the following commands.
 
-First install your dependency gems:
-```
-git clone git@cd.i.strikingly.com:strikingly/message-challenge.git # first we clone the repository
-cd message-challenge # go into it
-bundle install # install the gems
-rake db:setup # setup the database
-rails s # start the server
+Let's get this running:
+```bash
+$ git clone git@cd.i.strikingly.com:strikingly/message-challenge.git  # clone the repository
+$ cd message-challenge  # go into it
+$ bundle install  # install the gems
+$ rake db:setup  # setup the database
+$ rails db:migrate  # migrate the DB
+$ rails s  # start the server
 ```
 
 And visit http://localhost:3000/ in your browser.
