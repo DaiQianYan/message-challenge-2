@@ -1,5 +1,7 @@
 # Writing a messaging application
 
+![what it should look like](./public/screenshot.png)
+
 What we'd like is a simple messaging dashboard where users can talk with other users and search through their messages quickly, a lot like Wechat's group messaging. The application must be able to:
 
 1. Organize messages by thread, sorted by their last response time.
