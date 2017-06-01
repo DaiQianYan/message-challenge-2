@@ -26,12 +26,13 @@ $ rails s  # start the server
 
 And visit http://localhost:3000/ in your browser.
 
-
 ## Functional requirements
 
 Please read through these carefully and ask if there is something you don't understand.
 
-The goal is to have a web-based messaging system where users can converse in a message thread. If a message thread is clicked, all replies in that thread should be displayed in chronological order. If a thread has a new reply that a user hasn't opened yet, it should be marked as "unread". It should allow a user
+The goal is to have a web-based messaging system where users can reply to each other in a message thread. If a message thread is clicked, all replies in that thread should be displayed in chronological order. If a thread has a new reply that a user hasn't opened yet, it should be marked as "unread".
+
+A message thread should support multiple users chatting in the same thread, like a Wechat group message. Each user in the thread should have their independent "unread" status. If a user is removed from the thread, they should no longer have access to view the message thread or create new messages for that thread.
 
 ## Technical requirements
 
@@ -43,5 +44,6 @@ In your implementation, we'd prefer you to constrain your solution to the main t
 ## Non-Requirements
 
 - **Authentication:** You don't have to worry with the sign-out/sign-in/sign-up work. If you want to act as another user, you can modify the application_controller#current_user method with any of the default users: Dafeng, Xiaoyu, Daniel, Joyce, Tyler, Batman.
-
-- **Interface for creating a new message:** Creating a new message thread can be done via the console.
+- **Interface for creating a new message:** Creating a new message thread can be done via the console. Be sure to describe how in your solution!
+- **Flow for inviting new users to a message thread:** Inviting a new user to a thread can be done via console. Be sure to describe how in your solution!
+- **Individual "user has read this" stamps:** In some messaging applications, when a user reads a message it notifies the origin message writer that it's been read. (e.g: "Seen at 8:12AM") This feature is not necessary here. The only timestamp required is when the message was originally sent.
