@@ -6,9 +6,23 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
 
   <body>
+    <div id="header-bar">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            Strikingly chat application
+          </div>
+          <div class="col-md-8 text-right">
+            Currently signed in as <img src="<%= current_user.avatar_url %>" width="14" /> <%= current_user.name %>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <%= yield %>
   </body>
 </html>
