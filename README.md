@@ -32,6 +32,10 @@ And visit http://localhost:3000/ in your browser.
 $ git checkout -b my-feature-branch-name
 ```
 
+### If you ran into a ruby version issue (using rbenv)
+
+You might need to install Ruby 2.2.2 specifically and install the bundler gem along with it with the following command: `rbenv install 2.2.2 && gem install bundler`
+
 ## Functional requirements
 
 Please read through these carefully and ask if there is something you don't understand.
