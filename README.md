@@ -61,17 +61,17 @@ Once you've completed your solution, it's time to show the world! To deploy, we 
 Once you've been invited. You need to install the Heroku Toolbelt. It's easy with homebrew:
 
 ```
-brew install heroku
-heroku login
+$ brew install heroku
+$ heroku login
 ```
 
 Then, to push your code and test it:
 ```
-heroku git:remote -a strikingly-training-{yourname}
-git push heroku my-feature-branch-name:master
-heroku run rake db:migrate
-heroku run rake db:seed
-heroku open
+$ heroku git:remote -a strikingly-training-{yourname}
+$ git push heroku my-feature-branch-name:master
+$ heroku run rake db:migrate
+$ heroku run rake db:seed
+$ heroku open
 ```
 
 ### Populating data on Heroku
