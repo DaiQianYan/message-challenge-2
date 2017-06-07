@@ -26,6 +26,12 @@ $ rails s  # start the server
 
 And visit http://localhost:3000/ in your browser.
 
+**Before you start development** please make sure to create a [feature branch](https://martinfowler.com/bliki/FeatureBranch.html) for your changes like so:
+
+```
+$ git checkout -b my-feature-branch-name
+```
+
 ## Functional requirements
 
 Please read through these carefully and ask if there is something you don't understand.
@@ -47,3 +53,27 @@ In your implementation, we'd prefer you to constrain your solution to the main t
 - **Interface for creating a new message:** Creating a new message thread can be done via the console. Be sure to describe how in your solution!
 - **Flow for inviting new users to a message thread:** Inviting a new user to a thread can be done via console. Be sure to describe how in your solution!
 - **Individual "user has read this" stamps:** In some messaging applications, when a user reads a message it notifies the origin message writer that it's been read. (e.g: "Seen at 8:12AM") This feature is not necessary here. The only timestamp required is when the message was originally sent.
+
+## Deploying
+
+Once you've completed your solution, it's time to show the world! To deploy, we suggest using [Heroku](heroku.com). If you don't already have an application created for you, please contact @tylerdiaz, @jc, or @daniel so they can set one up for you.
+
+Once you've been invited. You need to install the Heroku Toolbelt. It's easy with homebrew:
+
+```
+brew install heroku
+heroku login
+```
+
+Then, to push your code and test it:
+```
+heroku git:remote -a strikingly-training-{yourname}
+git push heroku my-feature-branch-name:master
+heroku run rake db:migrate
+heroku run rake db:seed
+heroku open
+```
+
+### Populating data on Heroku
+
+`heroku run rails c` will give you a Rails console where you can create new records just as you would in code. Like so: `User.create!({ name: "Ruby" })`
