@@ -46,6 +46,7 @@ In your implementation, we'd prefer you to constrain your solution to the main t
 
 - **Performance:** The system should be able to support many messages. Over 1000, no more than 10k. This scale usually reveals poor queries (e.g: [N+1 queries](http://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations)) and prohivitively inefficient data design.
 - **Security:** A user should not be able to reply or view a thread that they are not participating in. XSS attacks shouldn't be possible.
+- **Test coverage:** The implementation should include tests that at the very least verify the essential functionality.
 
 ## Non-Requirements
 
