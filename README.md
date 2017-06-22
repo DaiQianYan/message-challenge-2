@@ -48,6 +48,8 @@ In your implementation, we'd prefer you to constrain your solution to the main t
 - **Security:** A user should not be able to reply or view a thread that they are not participating in. XSS attacks shouldn't be possible.
 - **Test coverage:** The implementation should include tests that at the very least verify the essential functionality.
 
+Rubocop is included to keep the implementation consistent. If a Rubocop rule seems too aggressive, suggest removing it. Otherwise, stay within the guidelines it enforces to keep the code easier to read.
+
 ## Non-Requirements
 
 - **Authentication:** You don't have to worry with the sign-out/sign-in/sign-up work. If you want to act as another user, you can modify the application_controller#current_user method with any of the default users: Dafeng, Xiaoyu, Daniel, Joyce, Tyler, Batman.
