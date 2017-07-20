@@ -48,8 +48,10 @@ A message thread should support multiple users chatting in the same thread, like
 
 In your implementation, we'd prefer you to constrain your solution to the main technologies currently used within Strikingly: Rails, Redis, Memcached, and PostgreSQL. You can create as many models as you'd like and add any gem that would speed up development. Some things to keep in mind:
 
+- **Functional:** The site should be simple to access and guarded against returning 500 error codes.
 - **Performance:** The system should be able to support many messages. Over 1000, no more than 10k. This scale usually reveals poor queries (e.g: [N+1 queries](http://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations)) and prohivitively inefficient data design.
 - **Security:** A user should not be able to reply or view a thread that they are not participating in. XSS attacks shouldn't be possible.
+- **Tested:** The system should have at least some coverage by [unit tests](http://guides.rubyonrails.org/testing.html).
 
 ## Non-Requirements
 
