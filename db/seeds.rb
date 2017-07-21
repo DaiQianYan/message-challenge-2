@@ -8,11 +8,11 @@
 
 User.create(
   [
-    { name: "Dafeng" },
-    { name: "Daniel" },
-    { name: "Joyce" },
-    { name: "Tyler" },
-    { name: "Xiaoyu" },
-    { name: "Batman" }
+    {name: "Dafeng"},
+    {name: "Daniel"},
+    {name: "Joyce"},
+    {name: "Tyler"},
+    {name: "Xiaoyu"},
+    {name: "Batman"}
   ]
 )

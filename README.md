@@ -51,7 +51,9 @@ In your implementation, we'd prefer you to constrain your solution to the main t
 - **Functional:** The site should be simple to access and guarded against returning 500 error codes.
 - **Performance:** The system should be able to support many messages. Over 1000, no more than 10k. This scale usually reveals poor queries (e.g: [N+1 queries](http://guides.rubyonrails.org/active_record_querying.html#eager-loading-associations)) and prohivitively inefficient data design.
 - **Security:** A user should not be able to reply or view a thread that they are not participating in. XSS attacks shouldn't be possible.
-- **Tested:** The system should have at least some coverage by [unit tests](http://guides.rubyonrails.org/testing.html).
+- **Test coverage:** The implementation should include tests that at the very least verify the essential functionality.
+
+Rubocop is included to keep the implementation consistent. If a Rubocop rule seems too aggressive, suggest removing it. Otherwise, stay within the guidelines it enforces to keep the code easier to read.
 
 ## Non-Requirements
 
