@@ -8,11 +8,11 @@
 
 User.create(
   [
-    {name: "Dafeng"},
-    {name: "Daniel"},
-    {name: "Joyce"},
-    {name: "Tyler"},
-    {name: "Xiaoyu"},
-    {name: "Batman"}
+    {name: "Dafeng", email: "dafeng@strikingly.com", password: "password"},
+    {name: "Daniel", email: "daniel@strikingly.com", password: "password"},
+    {name: "Joyce", email: "joyce@strikingly.com", password: "password"},
+    {name: "Tyler", email: "tyler@strikingly.com", password: "password"},
+    {name: "Xiaoyu", email: "xiaoyu@strikingly.com", password: "password"},
+    {name: "Batman", email: "batman@strikingly.com", password: "password"}
   ]
 )
