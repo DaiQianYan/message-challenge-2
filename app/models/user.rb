@@ -6,4 +6,10 @@ class User < ApplicationRecord
     validates(:email, presence:true, length: {maximum: 255}, format: {with: VALID_EMAIL_REGEX}, uniqueness: { case_sensitive: false })
     has_secure_password
     validates(:password, presence: true, length: {minimum: 6})
+
+    attr_accessor :remember_token
+    def avatar_url
+       "https://robohash.org/#{id}.png?set=set3"
+    end
+    
 end

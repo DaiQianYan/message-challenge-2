@@ -4,7 +4,7 @@
     <section class="user_info">
       <h1>
         <!-- <%= gravatar_for @user%> -->
-        <%= gravatar_for current_user %>
+        <img src="<%= current_user.avatar_url %>" width="100" />
         <%= @user.name %>
         <br>
         <%= @user.email %>
