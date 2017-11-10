@@ -22,7 +22,7 @@ gem "uglifier", ">= 1.3.0"
 # Use CoffeeScript for .coffee assets and views
 gem "coffee-rails", "~> 4.2"
 # See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+# gem 'therubyracer'
 
 # Write clean code
 gem "rubocop", "~> 0.49.1"
@@ -37,6 +37,11 @@ gem "jbuilder", "~> 2.5"
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
+
+#use pagination tool
+gem 'will_paginate', '3.1.6'
+#use moment.js tool
+gem 'momentjs-rails', '2.17.1'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

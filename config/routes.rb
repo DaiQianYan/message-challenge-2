@@ -11,14 +11,12 @@ Rails.application.routes.draw do
   post   '/login',   to: 'sessions#create'
   delete '/logout',  to: 'sessions#destroy'
   
-  resource :chat
-
-  resource :chats, param: :slug
+  resource :chats
 
   resource :messages
   
   resources :users
 
-  mount ActionCable.server => '/cable'
+  mount ActionCable.server => '/chat/cable'
 
 end

@@ -1,0 +1,35 @@
+<div class="col-md-4">
+    <ul class="no-point" id="my-chat-list">
+        <% @user_channels.each do |room| %>
+        <% u_id = room.channel.id %>
+        
+    <h4>My Messages</h4>
+    <hr/>
+
+    <a href="#" class="media active-message">
+      <img class="d-flex mr-3" src="https://robohash.org/4.png?set=set3" width="64" />
+      <div class="media-body">
+        <strong>Message title</strong><br/>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+      </div>
+    </a>
+    <hr/>
+
+    <a href="#" class="media">
+      <img class="d-flex mr-3" src="https://robohash.org/4.png?set=set3" width="64" />
+      <div class="media-body">
+        <strong><span class="badge badge-primary">Unread</span> Message title</strong><br/>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+      </div>
+    </a>
+    <hr/>
+
+    <a href="#" class="media">
+      <img class="d-flex mr-3" src="https://robohash.org/4.png?set=set3" width="64" />
+      <div class="media-body">
+        <strong>Message title</strong><br/>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
+      </div>
+    </a>
+
+</div>

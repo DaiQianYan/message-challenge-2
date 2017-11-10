@@ -1,0 +1,4 @@
+<%= cache message_prompt do %>
+    <% speak_user = which_user(message_prompt.user_id) %>
+    <strong><%= speak_user.name %>:</strong><span class="no-long"><%= message_prompt.content %></span>
+<% end %>

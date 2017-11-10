@@ -1,0 +1,7 @@
+<div id="message-controller-<%= u_id %>">
+    <% (@messages.length).times do |i| %>
+        <% if @messages[i].length >= 1 && @messages[i][0].channel_id == u_id %>
+            <%= render @messages[i] %>
+        <% end %>
+    <% end %>
+</div>
