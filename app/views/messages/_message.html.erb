@@ -1,12 +1,10 @@
 <%= cache message do %>
-    <% user = which_user(message.user_id) %>
-    <div class="message media" id="chat-message-<%= message.id %>">
-    <img class="d-flex mr-3" src="<%= user.avatar_url %>" width="64"/>
+
+<%= message.content %>
+    <!-- <div class="message media" id="chat-message-<%= message.id %>"> -->
     <div class="media-body">
-        <strong><%= user.name %>:</strong>
-        <small class="text-muted"><%= change_time(message.created_at) %> ago</small>
-        <br/>
-        <%= message.content %>
-    </div>
+
+        <!-- <br/> -->
+       
     </div>
 <% end %>
