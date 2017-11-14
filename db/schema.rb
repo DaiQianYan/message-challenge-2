@@ -32,4 +32,5 @@ ActiveRecord::Schema.define(version: 20171110061316) do
     t.datetime "updated_at",      null: false
   end
 
+  add_foreign_key "messages", "users", name: "messages_user_id_fkey"
 end

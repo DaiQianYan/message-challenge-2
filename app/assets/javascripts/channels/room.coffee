@@ -10,7 +10,10 @@ App.room = App.cable.subscriptions.create "RoomChannel",
   received: (data) ->
     # Called when there's incoming data on the websocket for this channel
     # alert data['message']
-    $('#messages').append data['message']
+    # 在被选中的元素结尾插入内容
+    # $('#messages').append data['message']
+    # 在被选中的元素开头插入内容
+    $('#messages').prepend data['message']
     # created_time = moment(data.created_at).startOf('second').fromNow()
     # @speak(data, created_time)
 

@@ -1,5 +1,5 @@
 class ChatController < ApplicationController
   def index
-    @messages = Message.all
+    @messages = Message.order('created_at desc')
   end
 end
