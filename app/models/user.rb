@@ -1,5 +1,8 @@
 class User < ApplicationRecord
     attr_accessor :remember_token
+    # has_many :messages
+
+
     def avatar_url
        "https://robohash.org/#{id}.png?set=set3"
     end
