@@ -13,6 +13,6 @@ App.room = App.cable.subscriptions.create "RoomChannel",
     created_time = moment(data.created_at).startOf('second').fromNow()
     @speak(data, created_time)
 
-  speak: (message, )->
+  speak: (message)->
     @perform 'speak', message:message
 
