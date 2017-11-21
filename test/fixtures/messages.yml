@@ -2,10 +2,8 @@
 
 one:
   content: MyString
-  user_id: 1
-  chat_id: 1
+  user: one
 
 two:
   content: MyString
-  user_id: 1
-  chat_id: 1
+  user: two

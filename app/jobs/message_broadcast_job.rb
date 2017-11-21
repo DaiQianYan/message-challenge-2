@@ -1,8 +1,11 @@
 class MessageBroadcastJob < ApplicationJob
   queue_as :default
 
+  
   def perform(message)
+    # sender_id = message.user_id
     ActionCable.server.broadcast 'room_channel', message: render_message(message)
+                                                #  sender_id: sender_id
   end
 
   private
